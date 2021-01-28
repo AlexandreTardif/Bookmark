@@ -24,9 +24,10 @@
     <tbody>
 @foreach (var item in Model) {
         <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Title)
-                </td>
+            <td>
+                <img style="height:32px" src="http://www.google.com/s2/favicons?sz=64&domain=@item.Url" />
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Url)
             </td>
