@@ -1,5 +1,5 @@
 ﻿@model IEnumerable<Laboratoire1.Models.Bookmark>
-
+    
 @{
     ViewData["Title"] = "Index";
 }
@@ -24,9 +24,9 @@
     <tbody>
 @foreach (var item in Model) {
         <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Title)
-            </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Title)
+                </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Url)
             </td>
